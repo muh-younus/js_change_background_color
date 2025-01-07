@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE-BACKGROUND-COLOR</title>
+
+    <!-- CSS-LINK -->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="button">
+        <button id="click">Click Me</button>
+    </div>
+
+
+    <script>
+
+        let button = document.getElementById("click");
+        const body = document.body;
+        console.log(body);
+
+        let array = ["yellow","green","blue","orange","aqua"];
+        let index = 0;
+        
+        
+
+        button.addEventListener("click", function(e){
+
+            let colorIndex = Math.floor(Math.random() * array.length)
+
+            body.style.backgroundColor = array[colorIndex];
+            
+
+
+        })
+    </script>
+</body>
+</html>
